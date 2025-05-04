@@ -14,13 +14,16 @@ from pytorch_lightning.utilities import rank_zero_only
 from torchvision import transforms
 from torch.utils.data import Dataset, DataLoader
 from sklearn.cluster import DBSCAN
-
+import random
+import datetime
 # --- Helpers ---
 @rank_zero_only
 def make_logger(args):
     return WandbLogger(
         project="angle-prediction",
-        name=f"{args.model_name}_bs{args.batch_size}_lr{args.lr}"
+        name=f"{args.model_name}_bs{args.batch_size}_lr{args.lr}",
+        log_model="all",
+        save_dir="checkpoints",
     )
 
 @rank_zero_only
@@ -213,26 +216,19 @@ def main(args):
 
     init_wandb(args, model)
     wandb_logger = make_logger(args)
-
+    
     early_stop = EarlyStopping(monitor="val_loss",
                                patience=7,
                                mode="min",
                                verbose=True)
 
-    ckpt_cb = ModelCheckpoint(
-        monitor="val_loss",
-        dirpath="checkpoints/",
-        filename=f"best-{args.model_name}_bs{args.batch_size}_lr{args.lr}",
-        save_top_k=3,
-        mode="min",
-    )
 
     trainer = Trainer(
         max_epochs=args.epochs,
         accelerator="gpu",
         devices=args.devices,
         logger=wandb_logger,
-        callbacks=[early_stop, ckpt_cb],
+        callbacks=[early_stop],
         log_every_n_steps=10,
         strategy="ddp",  # ensure distributed sync_dist works
     )
