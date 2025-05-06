@@ -1,0 +1,58 @@
+Region 2: Overall validation MSE = 29347.7715 (Samples: 21)
+Region 2: Validation MSE [lat, lon] = [25187.7969, 33507.7422]
+--------------------
+Region 12: Overall validation MSE = 18498.0000 (Samples: 27)
+Region 12: Validation MSE [lat, lon] = [11383.0371, 36995.0000]
+--------------------
+Region 4: Overall validation MSE = 6403.9526 (Samples: 27)
+Region 4: Validation MSE [lat, lon] = [4334.2979, 8473.6074]
+--------------------
+Region 7: Overall validation MSE = 41814.8711 (Samples: 24)
+Region 7: Validation MSE [lat, lon] = [56551.8711, 27077.8770]
+--------------------
+Region 13: Overall validation MSE = 92138.9453 (Samples: 24)
+Region 13: Validation MSE [lat, lon] = [95681.5703, 88596.3203]
+--------------------
+Region 3: Overall validation MSE = 62329.5195 (Samples: 27)
+Region 3: Validation MSE [lat, lon] = [52855.7539, 71803.2812]
+--------------------
+Region 9: Overall validation MSE = 45193.1367 (Samples: 15)
+Region 9: Validation MSE [lat, lon] = [41590.6328, 48795.6367]
+--------------------
+Region 5: Overall validation MSE = 10377.2891 (Samples: 27)
+Region 5: Validation MSE [lat, lon] = [5908.0386, 14846.5430]
+--------------------
+Region 10: Overall validation MSE = 79323.7500 (Samples: 33)
+Region 10: Validation MSE [lat, lon] = [9012.9766, 157746.2500]
+--------------------
+Region 1: Overall validation MSE = 20934.2227 (Samples: 21)
+Region 1: Validation MSE [lat, lon] = [18711.4785, 23156.9668]
+--------------------
+Region 11: Overall validation MSE = 37518.0000 (Samples: 24)
+Region 11: Validation MSE [lat, lon] = [55017.0000, 19179.3711]
+--------------------
+Region 6: Overall validation MSE = 6094.9321 (Samples: 27)
+Region 6: Validation MSE [lat, lon] = [4406.7842, 7783.0811]
+--------------------
+Region 8: Overall validation MSE = 29879.0000 (Samples: 27)
+Region 8: Validation MSE [lat, lon] = [36834.0000, 229253.0000]
+--------------------
+Region 15: Overall validation MSE = 40783.7930 (Samples: 36)
+Region 15: Validation MSE [lat, lon] = [29515.6074, 52051.9844]
+--------------------
+
+==============================
+Overall weighted validation MSE across all regions: 306777.0000 (Total Samples: 360)
+==============================
+
+==============================
+Overall weighted validation MSE across all regions: 306777.0000 (Total Samples: 360)
+==============================
+
+==============================
+Overall weighted validation MSE across all regions: 306777.0000 (Total Samples: 360)
+==============================
+
+==============================
+Overall weighted validation MSE across all regions: 240571248.0000 (Total Samples: 360)
+==============================
